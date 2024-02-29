@@ -8,10 +8,9 @@ import org.springframework.stereotype.Repository;
 import com.tech.Controller.Student;
 
 @Repository
-public interface StudentDao  extends JpaRepository<Student, Integer>{
+public interface StudentDao extends JpaRepository<Student, Integer> {
 
-	
-	//List <Student> findByName(String name);
+	// List <Student> findByName(String name);
 
 	List<Student> findByName(String name);
 }
